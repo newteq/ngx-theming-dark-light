@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
+import { SampleContentComponent } from './components';
 
 @NgModule({
-  imports: [
+	imports: [
 
 	],
-  declarations: [
-    
-  ]
+	declarations: [
+		SampleContentComponent
+	],
+	exports: [
+		SampleContentComponent
+	]
 })
 export class ContentModule { }
