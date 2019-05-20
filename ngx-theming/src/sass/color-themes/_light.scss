@@ -1,6 +1,10 @@
 .light-theme {
 	@extend :root;
 	
+	--primary-color: rgb(60, 50, 210);
+	--secondar-color: rgb(141, 50, 210);
+	--teriary-color: rgb(50, 189, 210);
+
 	--background-color: rgb(255, 255, 255);
 
 	--primary-text-color: rgb(0, 0, 0);

@@ -1,6 +1,10 @@
 .dark-theme {
 	@extend :root;
 	
+	--primary-color: rgb(50, 190, 210);
+	--secondar-color: rgb(255, 213, 60);
+	--teriary-color: rgb(255, 50, 119);
+
 	--background-color: rgb(50, 50, 50);
 
 	--primary-text-color: rgb(255, 255, 255);

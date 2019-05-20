@@ -19,7 +19,7 @@
   --warning-color: rgba(255, 185, 57, 0.8);
 	--info-color: rgba(146, 197, 235, 1);
 	
-	--scrollbar-color: rgb(50, 190, 210);
+	--scrollbar-color: var(--primary-color);
 
   //
   // The variables below are common between the light and dark themes
