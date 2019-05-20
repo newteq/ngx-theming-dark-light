@@ -3,7 +3,9 @@
 // Extended by light and dark themes to allow theme switching
 ///////////////////////////////////////////////////////
 :root {
+	//
 	// styling that is global, and needs to be defined by the light and dark files
+	//
 
 	color: var(--primary-text-color);
 	background-color: var(--background-color);
@@ -19,50 +21,9 @@
 
   //
   // The variables below are common between the light and dark themes
-  // Any specialised ones are contained in the specific theme's file.
+	// But use variables defined within those light and dark scss files
+	// This way the base can be override, but the same variable can 
+	// be used through the appplication
   //
 
-  // Navbar
-  --navbar-border-color: var(--border-color);
-  --navbar-shadow-color: var(--shadow-color);
-  --navbar-text-color: var(--secondary-color);
-
-  // Tree
-  --tree-border-color: var(--border-color);
-  --tree-shadow-color: var(--shadow-color);
-  --tree-text-color: var(--primary-text-color);
-  --tree-text-disabled-color: var(--disabled-text-color);
-  --tree-icon-color: var(--secondary-color);
-
-  // Cards
-  --card-background-color: var(--panel-color);
-  --card-text-color: var(--primary-text-color);
-  --card-shadow-color: var(--shadow-color);
-
-  // Forms
-  --form-label-color: var(--secondary-text-color);
-  --form-input-text-color: var(--primary-text-color);
-  --input-background-color: var(--card-color);
-  --input-bottom-border-color: var(--input-underline-color);
-  --input-unselected-background-color: var(--background-color);
-  --input-unselected-text-color: var(--primary-text-color);
-  --input-active-bottom-border-color: var(--primary-color);
-  --select-options-background-color: var(--background-color);
-  --select-options-highlight-background-color: var(--secondary-color);
-  --select-options-highlight-text-color: var(--white);
-  --select-options-border-color: var(--secondary-text-color);
-  --select-toggle-icon-color: var(--secondary-text-color);
-
-  // Tabs
-  --tabs-background-color: var(--panel-color);
-  --tabs-selected-background-color: var(--background-color);
-
-  // Tables
-  --table-shadow-color: var(--shadow-color);
-
-  // Switches
-  --switch-color: var(--primary-color);
-
-  // Pagination
-	--pagination-hover-text-color: var(--secondary-text-color);
 }
