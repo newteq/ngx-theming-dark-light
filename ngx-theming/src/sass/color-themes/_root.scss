@@ -18,14 +18,18 @@
   --error-color: rgba(255, 27, 34, .5);
   --warning-color: rgba(255, 185, 57, 0.8);
 	--info-color: rgba(146, 197, 235, 1);
-	
-	--scrollbar-color: var(--primary-color);
 
   //
   // The variables below are common between the light and dark themes
 	// But use variables defined within those light and dark scss files
 	// This way the base can be override, but the same variable can 
 	// be used through the appplication
-  //
+	//
+	
+	--scrollbar-color: var(--primary-color);
+
+	--primary-link-color: var(--primary-color);
+	--primary-link-hover-color: var(--secondary-color);
+	--primary-link-visited-color: var(--tertiary-color);
 
 }

@@ -1,3 +1,72 @@
 h1 {
-	color: var(--heading-one-color);
+  font-size: 2.5rem;
+  color: var(--heading-one-color);
 }
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 250;
+  line-height: 1.5;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* A link that has not been visited */
+a:link {
+	color: var(--primary-link-color);
+}
+
+/* A link that has been visited */
+a:visited {
+	color: var(--primary-link-visited-color);
+}
+
+/* A link that is hovered on */
+a:hover {
+	color: var(--primary-link-hover-color);
+  text-decoration: underline;
+}
+
+/* A link that is selected (i.e. as the user clicks)
+we don't normally really care about this but it's here for information purposes */
+// a:active {
+// 	color: green;
+// }
