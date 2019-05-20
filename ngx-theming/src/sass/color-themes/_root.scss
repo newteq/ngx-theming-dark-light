@@ -26,7 +26,9 @@
 	// be used through the appplication
 	//
 	
+	//--scrollbar-color: var(--primary-color);
 	--scrollbar-color: var(--primary-color);
+	--scrollbar-track-color: var(--secondary-color);
 
 	--primary-link-color: var(--primary-color);
 	--primary-link-hover-color: var(--secondary-color);

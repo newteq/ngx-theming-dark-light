@@ -1,33 +1,79 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  background: rgb(50, 189, 210);
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 125, 255);
+  border-radius: 0;
+}
+
+// /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 50, 210);
+}
+
 //////////////////////////////////////////
 // Scrollbar Styles
 //////////////////////////////////////////
 
-.scrollbar::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
+// ::-webkit-scrollbar-track {
+//   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+//   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+// 	border-radius: 10px;
+// 	background: rgb(50, 189, 210);
+// }
 
-.scrollbar::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
-}
+// .scrollbar::-webkit-scrollbar {
+//   // height: 12px;
+//   width: 2rem;
+// }
 
-.scrollbar::-webkit-scrollbar-corner {
-  background-color: var(--scrollbar-color);
-}
+// .scrollbar::-webkit-scrollbar-thumb {
+//   border-radius: 10px;
+//   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+//   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+// 	background: rgb(0, 125, 255);
+// }
 
-.scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: var(--scrollbar-color); 
-}
+//////////////////////////////////////////
+// Scrollbar Styles
+//////////////////////////////////////////
 
-.scrollbar.square::-webkit-scrollbar-track {
-  border-radius: 0 !important; 
-}
+// .scrollbar::-webkit-scrollbar-track {
+//   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+//   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+//   border-radius: 10px;
+// }
 
-.scrollbar.square::-webkit-scrollbar-thumb {
-  border-radius: 0 !important; 
-}
+// .scrollbar::-webkit-scrollbar {
+//   height: 12px;
+//   width: 12px;
+// }
+
+// .scrollbar::-webkit-scrollbar-corner {
+//   background-color: var(--scrollbar-color);
+// }
+
+// .scrollbar::-webkit-scrollbar-thumb {
+//   border-radius: 10px;
+//   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+//   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+//   background-color: var(--scrollbar-color);
+// }
+
+// .square::-webkit-scrollbar-track {
+//   border-radius: 0 !important;
+// }
+
+// .square::-webkit-scrollbar-thumb {
+//   border-radius: 0 !important;
+// }
