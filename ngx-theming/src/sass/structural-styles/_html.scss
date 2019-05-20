@@ -1,6 +1,6 @@
 html {
-	font-family: sans-serif;
-	line-height: 1.15;
+  font-family: sans-serif;
+  line-height: 1.15;
 }
 
 h1 {
@@ -36,8 +36,8 @@ h5,
 h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-	line-height: 1.2;
-	margin-top: 0;
+  line-height: 1.2;
+  margin-top: 0;
 }
 
 body {
@@ -57,17 +57,17 @@ a {
 
 /* A link that has not been visited */
 a:link {
-	color: var(--primary-link-color);
+  color: var(--primary-link-color);
 }
 
 /* A link that has been visited */
 a:visited {
-	color: var(--primary-link-visited-color);
+  color: var(--primary-link-visited-color);
 }
 
 /* A link that is hovered on */
 a:hover {
-	color: var(--primary-link-hover-color);
+  color: var(--primary-link-hover-color);
   text-decoration: underline;
 }
 
@@ -76,3 +76,67 @@ we don't normally really care about this but it's here for information purposes 
 // a:active {
 // 	color: green;
 // }
+
+.btn-primary {
+  color: var(--button-color-text);
+  background-color: var(--button-color-primary);
+	border-color: var(--button-color-primary);
+}
+.btn-primary:hover {
+  background-color: var(--button-color-primary-hover);
+  border-color: var(--button-color-primary-hover);
+}
+
+.btn-success {
+  color: var(--button-color-text);
+  background-color: var(--button-color-success);
+  border-color: var(--button-color-success);
+}
+.btn-success:hover {
+  background-color: var(--button-color-success-hover);
+  border-color: var(--button-color-success-hover);
+}
+
+.btn-danger {
+  color: var(--button-color-text);
+  background-color: var(--button-color-danger);
+  border-color: var(--button-color-danger);
+}
+.btn-danger:hover {
+  background-color: var(--button-color-danger-hover);
+  border-color: var(--button-color-danger-hover);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+	cursor: pointer;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
