@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-theming';
+	title = 'ngx-theming';
+	
+	constructor() {
+		const dane = 'make a conflict';
+	}
 }
