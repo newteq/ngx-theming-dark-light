@@ -10,17 +10,25 @@ import { IsDarkThemeKey } from '../../models';
 export class SampleContentComponent implements OnInit {
 
 	theme: string;
+	
+	private isDark: boolean;
 
 	constructor(
 		private localStorage: LocalStorageService
 	) { }
 
   ngOnInit() {
-		if (this.localStorage.getItem(IsDarkThemeKey)){
+		this.isDark = this.localStorage.getItem(IsDarkThemeKey);
+		if (this.isDark) {
 			this.theme = 'Dark';
 		} else {
 			this.theme = 'Light';
 		}
-  }
+	}
+	
+	changeTheme() {
+		this.isDark = !this.isDark;
+		this.localStorage.setItem(IsDarkThemeKey, this.isDark);
+	}
 
 }
