@@ -8,7 +8,7 @@ import { IsDarkThemeKey } from './content/models';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'ngx-theming';
+	title = 'ngx-themingchange';
 
 	private lightTheme = 'light-theme';
 	private darkTheme = 'dark-theme';
@@ -20,6 +20,10 @@ export class AppComponent {
 		this.themeToggleService.themeChanged.subscribe((isDark: boolean) => {
 			this.toggleThemeClass(isDark);
 		});
+	}
+	
+	private someMethod() {
+		console.log('test');
 	}
 
 	private toggleThemeClass(isDark: boolean) {
