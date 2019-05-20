@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalStorageService } from '../../services';
-import { IsDarkThemeKey } from '../../models';
+import { ThemeToggleService } from '../../services/theme-toggle.service';
 
 @Component({
   selector: 'app-sample-content',
@@ -10,25 +9,20 @@ import { IsDarkThemeKey } from '../../models';
 export class SampleContentComponent implements OnInit {
 
 	theme: string;
-	
-	private isDark: boolean;
 
 	constructor(
-		private localStorage: LocalStorageService
+		private themeToggleService: ThemeToggleService,
 	) { }
 
   ngOnInit() {
-		this.isDark = this.localStorage.getItem(IsDarkThemeKey);
-		if (this.isDark) {
-			this.theme = 'Dark';
-		} else {
-			this.theme = 'Light';
-		}
+		this.theme = this.themeToggleService.currentTheme;
+		this.themeToggleService.themeChanged.subscribe(() => {
+			this.theme = this.themeToggleService.currentTheme;
+		});
 	}
 	
 	changeTheme() {
-		this.isDark = !this.isDark;
-		this.localStorage.setItem(IsDarkThemeKey, this.isDark);
+		this.themeToggleService.toggleTheme();
 	}
 
 }

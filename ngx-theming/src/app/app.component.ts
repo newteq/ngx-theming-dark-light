@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LocalStorageService } from './content/services';
+import { ThemeToggleService } from './content/services/theme-toggle.service';
 import { IsDarkThemeKey } from './content/models';
 
 @Component({
@@ -10,10 +10,23 @@ import { IsDarkThemeKey } from './content/models';
 export class AppComponent {
 	title = 'ngx-theming';
 
-	constructor(private localStorageService: LocalStorageService) {
-		const currentTheme = this.localStorageService.getItem(IsDarkThemeKey);
-		if (currentTheme === undefined || currentTheme === null) {
-			this.localStorageService.setItem(IsDarkThemeKey, true);
+	private lightTheme = 'light-theme';
+	private darkTheme = 'dark-theme';
+
+	themeClass = this.darkTheme;
+
+	constructor(private themeToggleService: ThemeToggleService) {
+		this.toggleThemeClass(this.themeToggleService.isDarkTheme);
+		this.themeToggleService.themeChanged.subscribe((isDark: boolean) => {
+			this.toggleThemeClass(isDark);
+		});
+	}
+
+	private toggleThemeClass(isDark: boolean) {
+		if (isDark) {
+			this.themeClass = this.darkTheme;
+		} else {
+			this.themeClass = this.lightTheme;
 		}
 	}
 }
