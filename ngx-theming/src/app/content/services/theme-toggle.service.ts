@@ -37,7 +37,7 @@ export class ThemeToggleService {
 	private ensureTheme() {
 		if (this.isDark === undefined) {
 			const current = this.localStorageService.getItem(IsDarkThemeKey);
-			if (current === undefined) {
+			if (current || current === null || current === undefined) {
 				this.isDark = true;
 			} else {
 				this.isDark = false;
