@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalStorageService } from '../../services';
+import { IsDarkThemeKey } from '../../models';
 
 @Component({
   selector: 'app-sample-content',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleContentComponent implements OnInit {
 
-  constructor() { }
+	theme: string;
+
+	constructor(
+		private localStorage: LocalStorageService
+	) { }
 
   ngOnInit() {
+		if (this.localStorage.getItem(IsDarkThemeKey)){
+			this.theme = 'Dark';
+		} else {
+			this.theme = 'Light';
+		}
   }
 
 }

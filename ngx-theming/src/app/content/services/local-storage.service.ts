@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-const APP_LOCAL_STORAGE_PREFIX = 'NgxTheme';
+const APP_LOCAL_STORAGE_PREFIX = 'NgxTheme-';
 
 @Injectable({
   providedIn: 'root'
