@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ThemeToggleService } from './content/services/theme-toggle.service';
-import { IsDarkThemeKey } from './content/models';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +14,14 @@ export class AppComponent {
 	private darkTheme = 'dark-theme';
 
 	themeClass = this.darkTheme;
+	currentVersion: string;
 
 	constructor(private themeToggleService: ThemeToggleService) {
 		this.toggleThemeClass(this.themeToggleService.isDarkTheme);
 		this.themeToggleService.themeChanged.subscribe((isDark: boolean) => {
 			this.toggleThemeClass(isDark);
 		});
+		this.currentVersion = environment.majorVersion + "." + environment.minorversion;
 	}
 
 	private someMethod(param: string) {

@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+	production: true,
+	majorVersion: 0,
+	minorversion: 0,
 };
