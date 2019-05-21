@@ -1,0 +1,2 @@
+This website was used to get information on how to deploy to github pages easily with angular
+https://alligator.io/angular/deploying-angular-app-github-pages/
