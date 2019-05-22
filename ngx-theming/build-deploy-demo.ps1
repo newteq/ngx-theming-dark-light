@@ -1,2 +1,2 @@
-ng build --prod --base-href "https://newteqdeveloper.github.io/ngx-theming-dark-light" --deploy-url "https://newteqdeveloper.github.io/ngx-theming-dark-light/"
+ng build --prod --base-href "https://newteq.github.io/ngx-theming-dark-light" --deploy-url "https://newteq.github.io/ngx-theming-dark-light/"
 ngh -d dist/ngx-theming --message="Updating demo website with automated build"
