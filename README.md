@@ -8,7 +8,7 @@ If there are any changes that you feel should be included in the repository, ple
 
 ## Demo
 
-You can find a demo of this site running at https://newteqdeveloper.github.io/ngx-theming-dark-light
+You can find a demo of this site running at https://newteq.github.io/ngx-theming-dark-light
 
 ## Angular Information
 
